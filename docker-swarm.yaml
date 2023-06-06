@@ -57,6 +57,8 @@ services:
 networks:
   super_network:
     driver: overlay
+    attachable: true
+    name: super_network
 
 volumes:
   superagi_postgres_data:
